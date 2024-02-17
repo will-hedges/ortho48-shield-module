@@ -7,15 +7,14 @@ config ZMK_KEYBOARD_NAME
 	default "ortho48"
 
 
-if ZMK_BACKLIGHT
+config ZMK_BACKLIGHT
+	default y
 
 config PWM
 	default y
 
 config LED_GPIO
 	default n if LED_PWM
-
-endif
 
 
 endif
