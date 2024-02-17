@@ -3,7 +3,7 @@ id: ortho48
 name: ortho48
 type: shield
 url: https://docs.cannonkeys.com/bluepill-build/
-requires: [blackpill]
+requires: [pillbug]
 features:
   - keys
   - backlight

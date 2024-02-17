@@ -3,6 +3,7 @@
 
 if SHIELD_ORTHO48
 
+
 config ZMK_KEYBOARD_NAME
 	default "ortho48"
 
