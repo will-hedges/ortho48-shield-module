@@ -6,4 +6,16 @@ if SHIELD_ORTHO48
 config ZMK_KEYBOARD_NAME
 	default "ortho48"
 
+
+if ZMK_BACKLIGHT
+
+config PWM
+	default y
+
+config LED_GPIO
+	default n if LED_PWM
+
+endif
+
+
 endif
