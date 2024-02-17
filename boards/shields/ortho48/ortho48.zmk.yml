@@ -1,0 +1,9 @@
+file_format: "1"
+id: ortho48
+name: ortho48
+type: shield
+url: https://docs.cannonkeys.com/bluepill-build/
+requires: [blackpill]
+features:
+  - keys
+  - backlight

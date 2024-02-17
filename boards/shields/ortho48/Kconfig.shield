@@ -1,0 +1,5 @@
+# Copyright (c) 2024 will-hedges <https://github.com/will-hedges>
+# SPDX-License-Identifier: MIT
+
+config SHIELD_ORTHO48
+	def_bool $(shields_list_contains,ortho48)

@@ -1,0 +1,38 @@
+/*
+ * Copyright (c) 2024 will-hedges <https://github.com/will-hedges>
+ * SPDX-License-Identifier: MIT
+*/
+
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan_0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+
+        col-gpios
+            = <&blackpill 20 GPIO_ACTIVE_HIGH>
+			, <&blackpill 21 GPIO_ACTIVE_HIGH>
+			, <&blackpill 19 GPIO_ACTIVE_HIGH>
+			, <&blackpill 18 GPIO_ACTIVE_HIGH>
+			, <&blackpill 17 GPIO_ACTIVE_HIGH>
+			, <&blackpill 16 GPIO_ACTIVE_HIGH>
+			, <&blackpill 15 GPIO_ACTIVE_HIGH>
+			, <&blackpill 27 GPIO_ACTIVE_HIGH>
+			, <&blackpill 38 GPIO_ACTIVE_HIGH>
+			, <&blackpill 10 GPIO_ACTIVE_HIGH>
+			, <&blackpill 4  GPIO_ACTIVE_HIGH>
+			, <&blackpill 3  GPIO_ACTIVE_HIGH>
+            ;
+
+        row-gpios
+            = <&blackpill 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&blackpill 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&blackpill 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&blackpill 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
