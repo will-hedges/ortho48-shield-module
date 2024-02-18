@@ -1,13 +1,12 @@
-/*
- * Copyright (c) 2024 will-hedges <https://github.com/will-hedges>
- * SPDX-License-Identifier: MIT
-*/
+// Copyright (c) 2024 will-hedges <https://github.com/will-hedges>
+// SPDX-License-Identifier: MIT
 
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,backlight = &backlight;
+        zmk,underglow = &led_strip;
     };
 
     kscan0: kscan_0 {

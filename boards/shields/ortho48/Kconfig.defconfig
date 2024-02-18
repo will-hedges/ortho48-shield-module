@@ -10,12 +10,22 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_BACKLIGHT
 	default y
-
+if ZMK_BACKLIGHT
 config PWM
 	default y
-
+config LED_PWM
+	default y
 config LED_GPIO
 	default n if LED_PWM
+endif # ZMK_BACKLIGHT
 
 
-endif
+config ZMK_RGB_UNDERGLOW
+    default y
+if ZMK_RGB_UNDERGLOW
+config WS2812_STRIP
+    default y
+endif # ZMK_RGB_UNDERGLOW
+
+
+endif # SHIELD_ORTHO48

@@ -7,3 +7,5 @@ requires: [pillbug]
 features:
   - keys
   - backlight
+  - rgb underglow
+  
